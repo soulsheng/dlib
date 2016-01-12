@@ -15,7 +15,6 @@ dist
 /build/Debug
 /build/Release
 /build/Win32
-/examples/vc10/dlib_build
 /examples/vc10/CMakeFiles
 /examples/vc10/*.filters
 /examples/vc10/*.cmake
@@ -29,3 +28,5 @@ dist
 /examples/vc10/Win32
 /examples/vc10/*.suo
 /build/*.suo
+/examples/vc10/dlib_build/CMakeFiles
+/examples/vc10/dlib_build/*.cmake
