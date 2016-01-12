@@ -15,3 +15,15 @@ dist
 /build/Debug
 /build/Release
 /build/Win32
+/examples/vc10/dlib_build
+/examples/vc10/CMakeFiles
+/examples/vc10/*.filters
+/examples/vc10/*.cmake
+/examples/vc10/*.txt
+/examples/vc10/*.dir
+/examples/vc10/*.sdf
+/examples/vc10/*.opensdf
+/examples/vc10/*.user
+/examples/vc10/Debug
+/examples/vc10/Release
+/examples/vc10/Win32

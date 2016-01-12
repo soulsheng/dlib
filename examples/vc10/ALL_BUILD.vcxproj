@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5B2A4E5F-0458-4CBB-820E-12BFAB049B3D}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/data/paper/DSST/dlib/dlib/..;C:/opencv/sources/build;C:/opencv/sources/include;C:/opencv/sources/include/opencv;C:/opencv/sources/modules/core/include;C:/opencv/sources/modules/flann/include;C:/opencv/sources/modules/imgproc/include;C:/opencv/sources/modules/highgui/include;C:/opencv/sources/modules/features2d/include;C:/opencv/sources/modules/calib3d/include;C:/opencv/sources/modules/ml/include;C:/opencv/sources/modules/video/include;C:/opencv/sources/modules/legacy/include;C:/opencv/sources/modules/objdetect/include;C:/opencv/sources/modules/photo/include;C:/opencv/sources/modules/gpu/include;C:/opencv/sources/modules/ocl/include;C:/opencv/sources/modules/nonfree/include;C:/opencv/sources/modules/contrib/include;C:/opencv/sources/modules/stitching/include;C:/opencv/sources/modules/superres/include;C:/opencv/sources/modules/ts/include;C:/opencv/sources/modules/videostab/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/data/paper/DSST/dlib/dlib/..;C:/opencv/sources/build;C:/opencv/sources/include;C:/opencv/sources/include/opencv;C:/opencv/sources/modules/core/include;C:/opencv/sources/modules/flann/include;C:/opencv/sources/modules/imgproc/include;C:/opencv/sources/modules/highgui/include;C:/opencv/sources/modules/features2d/include;C:/opencv/sources/modules/calib3d/include;C:/opencv/sources/modules/ml/include;C:/opencv/sources/modules/video/include;C:/opencv/sources/modules/legacy/include;C:/opencv/sources/modules/objdetect/include;C:/opencv/sources/modules/photo/include;C:/opencv/sources/modules/gpu/include;C:/opencv/sources/modules/ocl/include;C:/opencv/sources/modules/nonfree/include;C:/opencv/sources/modules/contrib/include;C:/opencv/sources/modules/stitching/include;C:/opencv/sources/modules/superres/include;C:/opencv/sources/modules/ts/include;C:/opencv/sources/modules/videostab/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/data/paper/DSST/dlib/dlib/..;C:/opencv/sources/build;C:/opencv/sources/include;C:/opencv/sources/include/opencv;C:/opencv/sources/modules/core/include;C:/opencv/sources/modules/flann/include;C:/opencv/sources/modules/imgproc/include;C:/opencv/sources/modules/highgui/include;C:/opencv/sources/modules/features2d/include;C:/opencv/sources/modules/calib3d/include;C:/opencv/sources/modules/ml/include;C:/opencv/sources/modules/video/include;C:/opencv/sources/modules/legacy/include;C:/opencv/sources/modules/objdetect/include;C:/opencv/sources/modules/photo/include;C:/opencv/sources/modules/gpu/include;C:/opencv/sources/modules/ocl/include;C:/opencv/sources/modules/nonfree/include;C:/opencv/sources/modules/contrib/include;C:/opencv/sources/modules/stitching/include;C:/opencv/sources/modules/superres/include;C:/opencv/sources/modules/ts/include;C:/opencv/sources/modules/videostab/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/data/paper/DSST/dlib/dlib/..;C:/opencv/sources/build;C:/opencv/sources/include;C:/opencv/sources/include/opencv;C:/opencv/sources/modules/core/include;C:/opencv/sources/modules/flann/include;C:/opencv/sources/modules/imgproc/include;C:/opencv/sources/modules/highgui/include;C:/opencv/sources/modules/features2d/include;C:/opencv/sources/modules/calib3d/include;C:/opencv/sources/modules/ml/include;C:/opencv/sources/modules/video/include;C:/opencv/sources/modules/legacy/include;C:/opencv/sources/modules/objdetect/include;C:/opencv/sources/modules/photo/include;C:/opencv/sources/modules/gpu/include;C:/opencv/sources/modules/ocl/include;C:/opencv/sources/modules/nonfree/include;C:/opencv/sources/modules/contrib/include;C:/opencv/sources/modules/stitching/include;C:/opencv/sources/modules/superres/include;C:/opencv/sources/modules/ts/include;C:/opencv/sources/modules/videostab/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/data/paper/DSST/dlib/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/data/paper/DSST/dlib/examples -BD:/data/paper/DSST/dlib/examples/vc10 --check-stamp-file D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/data/paper/DSST/dlib/examples/CMakeLists.txt;D:\data\paper\DSST\dlib\examples\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;D:\data\paper\DSST\dlib\dlib\cmake;D:\data\paper\DSST\dlib\dlib\add_global_compiler_switch.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.c.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\CheckTypeSize\SIZE_OF_VOID_PTR.c;D:\data\paper\DSST\dlib\dlib\release_build_by_default;C:\opencv\sources\build\OpenCVConfig-version.cmake;C:\opencv\sources\build\OpenCVConfig.cmake;C:\opencv\sources\build\OpenCVModules.cmake;D:\data\paper\DSST\dlib\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/data/paper/DSST/dlib/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/data/paper/DSST/dlib/examples -BD:/data/paper/DSST/dlib/examples/vc10 --check-stamp-file D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/data/paper/DSST/dlib/examples/CMakeLists.txt;D:\data\paper\DSST\dlib\examples\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;D:\data\paper\DSST\dlib\dlib\cmake;D:\data\paper\DSST\dlib\dlib\add_global_compiler_switch.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.c.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\CheckTypeSize\SIZE_OF_VOID_PTR.c;D:\data\paper\DSST\dlib\dlib\release_build_by_default;C:\opencv\sources\build\OpenCVConfig-version.cmake;C:\opencv\sources\build\OpenCVConfig.cmake;C:\opencv\sources\build\OpenCVModules.cmake;D:\data\paper\DSST\dlib\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/data/paper/DSST/dlib/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/data/paper/DSST/dlib/examples -BD:/data/paper/DSST/dlib/examples/vc10 --check-stamp-file D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/data/paper/DSST/dlib/examples/CMakeLists.txt;D:\data\paper\DSST\dlib\examples\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;D:\data\paper\DSST\dlib\dlib\cmake;D:\data\paper\DSST\dlib\dlib\add_global_compiler_switch.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.c.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\CheckTypeSize\SIZE_OF_VOID_PTR.c;D:\data\paper\DSST\dlib\dlib\release_build_by_default;C:\opencv\sources\build\OpenCVConfig-version.cmake;C:\opencv\sources\build\OpenCVConfig.cmake;C:\opencv\sources\build\OpenCVModules.cmake;D:\data\paper\DSST\dlib\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/data/paper/DSST/dlib/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/data/paper/DSST/dlib/examples -BD:/data/paper/DSST/dlib/examples/vc10 --check-stamp-file D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/data/paper/DSST/dlib/examples/CMakeLists.txt;D:\data\paper\DSST\dlib\examples\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;D:\data\paper\DSST\dlib\dlib\cmake;D:\data\paper\DSST\dlib\dlib\add_global_compiler_switch.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.c.in;D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\CheckTypeSize\SIZE_OF_VOID_PTR.c;D:\data\paper\DSST\dlib\dlib\release_build_by_default;C:\opencv\sources\build\OpenCVConfig-version.cmake;C:\opencv\sources\build\OpenCVConfig.cmake;C:\opencv\sources\build\OpenCVModules.cmake;D:\data\paper\DSST\dlib\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\1f0f3841b32fdb8948d3d6c6cc680e9c\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/data/paper/DSST/dlib/examples/vc10/CMakeFiles/1f0f3841b32fdb8948d3d6c6cc680e9c/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/data/paper/DSST/dlib/examples/vc10/CMakeFiles/1f0f3841b32fdb8948d3d6c6cc680e9c/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/data/paper/DSST/dlib/examples/vc10/CMakeFiles/1f0f3841b32fdb8948d3d6c6cc680e9c/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/data/paper/DSST/dlib/examples/vc10/CMakeFiles/1f0f3841b32fdb8948d3d6c6cc680e9c/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\data\paper\DSST\dlib\examples\vc10\CMakeFiles\ALL_BUILD</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/3d_point_cloud_ex.vcxproj">
+      <Project>24D0F902-DA0A-43F0-9798-FA9D691BD89F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/ZERO_CHECK.vcxproj">
+      <Project>A5694654-9C3E-4AC9-9AF3-9856C55F3427</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/assignment_learning_ex.vcxproj">
+      <Project>A3504B6B-1EE5-4DEE-B0C6-38303B028AF2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/bayes_net_ex.vcxproj">
+      <Project>2C93173D-A03D-4B2D-BF8A-DD10561282BB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/bayes_net_from_disk_ex.vcxproj">
+      <Project>7BBF4E34-4809-494F-812A-2E756394B042</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/bayes_net_gui_ex.vcxproj">
+      <Project>57DF97A4-2D08-4771-BDA3-BD9E45A4D85C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/bridge_ex.vcxproj">
+      <Project>4B2A2008-8752-4535-BE16-9E888AE6239C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/bsp_ex.vcxproj">
+      <Project>CAD1CBD0-84FF-43DF-9A86-EFCF1C120B2D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/compress_stream_ex.vcxproj">
+      <Project>84A717D8-CBC5-4FF5-B08B-5DED5F1A8D53</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/config_reader_ex.vcxproj">
+      <Project>2B922FCD-DDEE-4C5B-A3A1-5FF64E5069AB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/custom_trainer_ex.vcxproj">
+      <Project>F4B35FEC-6F56-438B-8161-23044FADD5E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/dir_nav_ex.vcxproj">
+      <Project>59D68322-383D-4AE4-ADB3-E7FC1108590B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/dlib_build/dlib.vcxproj">
+      <Project>70F8C2C9-1FD3-41DB-99FD-8A83CAE58BBB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/empirical_kernel_map_ex.vcxproj">
+      <Project>687A9112-F4F7-4BAA-BE8A-24DEEFA21134</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/face_detection_ex.vcxproj">
+      <Project>F53D54E2-507B-43B3-A4D2-68C160C8ED76</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/face_landmark_detection_ex.vcxproj">
+      <Project>2F0D8FC7-078D-4A0D-A771-D353D5E6EF33</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/fhog_ex.vcxproj">
+      <Project>EB822254-8590-4693-99C4-BE404A0D29E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/fhog_object_detector_ex.vcxproj">
+      <Project>1F213B3F-3030-45A0-8614-D9F850F0CC9B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/file_to_code_ex.vcxproj">
+      <Project>720615E5-1A0A-4D97-BC1C-A77650B13FA4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/graph_labeling_ex.vcxproj">
+      <Project>B24D3ABA-B5CD-40D9-A66A-EC254920C7F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/gui_api_ex.vcxproj">
+      <Project>6E5EF824-C449-416A-B49B-C60FEA107F1E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/hough_transform_ex.vcxproj">
+      <Project>1981B930-DEF2-4252-8CB9-1EF8F3DDA9CC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/image_ex.vcxproj">
+      <Project>3BF2C219-7AD9-4772-B59E-6432659AA657</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/integrate_function_adapt_simp_ex.vcxproj">
+      <Project>DDB61CBF-BC0F-4382-B0F7-C36A4D069747</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/iosockstream_ex.vcxproj">
+      <Project>38AFC7A2-D201-42E9-9FBB-178FAC3237FA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/kcentroid_ex.vcxproj">
+      <Project>9277446F-0311-45BC-BD4C-8501F6B94835</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/kkmeans_ex.vcxproj">
+      <Project>A7CDA74E-D709-4882-869A-946E182F6520</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/krls_ex.vcxproj">
+      <Project>7004FA68-E7DF-426F-88FD-57423361344E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/krls_filter_ex.vcxproj">
+      <Project>5EA1C96C-3F09-47D3-A80F-0191405EA35F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/krr_classification_ex.vcxproj">
+      <Project>AA97244E-0793-425A-B37D-C3199B8EA9AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/krr_regression_ex.vcxproj">
+      <Project>03D7F530-E7D1-441B-8844-71444BE02D9F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/learning_to_track_ex.vcxproj">
+      <Project>D3BF45A4-2503-4D2A-A436-11F18F397F6A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/least_squares_ex.vcxproj">
+      <Project>82931AE9-F0A2-41AA-875F-CD9E3F06DFEF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/linear_manifold_regularizer_ex.vcxproj">
+      <Project>F38307A9-0758-46F6-A1A2-FB877332BD28</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/logger_custom_output_ex.vcxproj">
+      <Project>497A954D-A918-40CD-95FE-FF4361A9B1E7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/logger_ex.vcxproj">
+      <Project>377A3342-6A63-42B9-8A3B-BA940F622E4A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/logger_ex_2.vcxproj">
+      <Project>C30EABDB-E101-4026-9183-EEE78594E798</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/matrix_ex.vcxproj">
+      <Project>22C3168C-9864-4B74-A8ED-DA461141C94D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/matrix_expressions_ex.vcxproj">
+      <Project>48FAD0AB-F75D-4F8D-86BA-760713B0FB4C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/max_cost_assignment_ex.vcxproj">
+      <Project>7487EF80-5CBB-4D29-A57D-35E5B3040F59</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/member_function_pointer_ex.vcxproj">
+      <Project>930B8627-B4BB-4375-BDE1-AB6A4A17217E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/mlp_ex.vcxproj">
+      <Project>CEA6DCA1-9EE7-4D66-B838-87E47CA59704</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/model_selection_ex.vcxproj">
+      <Project>5A3C4728-F9EC-4EF9-B2F3-943F025C87C3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/mpc_ex.vcxproj">
+      <Project>61EA0758-FE52-436E-9760-6A784BA59A1F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/multiclass_classification_ex.vcxproj">
+      <Project>AF61B6B8-2B3E-42DA-A317-BF4F8524D4E7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/multithreaded_object_ex.vcxproj">
+      <Project>D11FFB16-6CD0-4478-8D0A-D8D416DE5469</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/object_detector_advanced_ex.vcxproj">
+      <Project>B93DB20B-41D7-4D78-AF49-9AA06E50837F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/object_detector_ex.vcxproj">
+      <Project>651E7E85-4589-409D-A221-3D34583F0DA3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/one_class_classifiers_ex.vcxproj">
+      <Project>85B30A14-0FCA-4ECF-B5C3-C22F4F820E71</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/optimization_ex.vcxproj">
+      <Project>8954986D-66AF-46F1-BEE2-C1D50418AAD9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/parallel_for_ex.vcxproj">
+      <Project>648A4104-6CFF-4A2B-BE41-AC45795D94D4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/pipe_ex.vcxproj">
+      <Project>7C883191-66EF-4378-A52D-99F6DA37D772</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/pipe_ex_2.vcxproj">
+      <Project>82C7539B-6E2E-480F-B340-C4368126EB7C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/quantum_computing_ex.vcxproj">
+      <Project>C4768DF4-391D-4A52-AE0C-F1365123B472</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/queue_ex.vcxproj">
+      <Project>BEBBC870-F277-4B35-8435-55193B6EA670</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/rank_features_ex.vcxproj">
+      <Project>0FAAF180-805F-4CE6-B75C-367AC37CFB61</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/running_stats_ex.vcxproj">
+      <Project>ACD45727-CAED-4A93-B2F0-CFB38C6A1C70</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/rvm_ex.vcxproj">
+      <Project>64DE5547-AC40-4796-92B0-83CCA5D53D03</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/rvm_regression_ex.vcxproj">
+      <Project>BE8399F7-0E35-4068-8BDC-CE3A4950EDB1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/sequence_labeler_ex.vcxproj">
+      <Project>A3FD2929-8482-4626-BE57-ADEC7CFEAF8B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/sequence_segmenter_ex.vcxproj">
+      <Project>D991B225-E35B-4A62-B4CF-8DB417F1E6BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/server_http_ex.vcxproj">
+      <Project>F627CF60-42CB-4305-BEBA-D13DE365A9ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/server_iostream_ex.vcxproj">
+      <Project>A65ED8DE-9823-4381-BFF0-B79EB52E9403</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/sockets_ex.vcxproj">
+      <Project>A17ADE76-35CA-4DB0-A99B-1F586EDAA8A0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/sockstreambuf_ex.vcxproj">
+      <Project>4DAF49BB-8911-4314-9BDD-3585403D9346</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/std_allocator_ex.vcxproj">
+      <Project>50F9AB1D-7CDB-4076-9707-E8AA022C6F29</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/surf_ex.vcxproj">
+      <Project>0F486BC1-F1F3-4152-8142-F163346C04D4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/svm_c_ex.vcxproj">
+      <Project>4045E2AF-756F-4490-8683-54F0B19BD67D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/svm_ex.vcxproj">
+      <Project>98C15E19-74EA-42BE-9D2A-EF89D5003DCE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/svm_pegasos_ex.vcxproj">
+      <Project>07D37E3A-E5A9-4F01-8A94-35D62BBF9A99</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/svm_rank_ex.vcxproj">
+      <Project>4027BCA4-1897-403E-AB73-DDDB0E061E30</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/svm_sparse_ex.vcxproj">
+      <Project>B8FDA9C5-8AAA-4B66-BAC9-2EBFAE3DB668</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/svm_struct_ex.vcxproj">
+      <Project>C65B6C94-0842-437D-9C75-BDBED24C6A94</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/svr_ex.vcxproj">
+      <Project>F6949636-D351-4DCA-9CD2-7C5DEFC8A3BE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/thread_function_ex.vcxproj">
+      <Project>F6CD46AD-A3BA-4F33-8ACC-4F352820A0E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/thread_pool_ex.vcxproj">
+      <Project>3DA028D9-70DE-4864-9765-E93AC77F55C9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/threaded_object_ex.vcxproj">
+      <Project>A1B8D34E-9F05-4F6D-9A88-8FDEECCAEC41</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/threads_ex.vcxproj">
+      <Project>3F7CB787-F5BA-4E4C-B813-9283CADB4861</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/timer_ex.vcxproj">
+      <Project>5FA4087B-B1E3-4392-AB93-78B51E6E3F3A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/train_object_detector.vcxproj">
+      <Project>E0361B59-60BF-47D6-8BAA-4CCADBEC5773</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/train_shape_predictor_ex.vcxproj">
+      <Project>D503E689-29FA-42F8-9C82-D55CE106CA96</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/using_custom_kernels_ex.vcxproj">
+      <Project>82F97C69-82DF-4032-B88C-2487A2C12AAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/video_tracking_ex.vcxproj">
+      <Project>FFEF7216-BEDF-479A-A17C-2E531C1B4C6C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/webcam_face_pose_ex.vcxproj">
+      <Project>437ED042-1D39-41BC-99F7-13D31F231C82</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/xml_parser_ex.vcxproj">
+      <Project>EA0DDC5F-B37F-4380-877B-1B0DD93E45B3</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
