@@ -375,9 +375,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\dlib\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{1B047E6A-8D45-450A-BAAE-C6F6E7EECDF3}</UniqueIdentifier>
     </Filter>

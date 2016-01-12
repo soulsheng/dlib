@@ -49,27 +49,28 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dlib.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dlib</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dlib.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dlib</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\MinSizeRel\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">dlib.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">dlib</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\RelWithDebInfo\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">dlib.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">dlib</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dlib.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dlib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dlib.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dlib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">dlib.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">dlib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">dlib.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">dlib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>D:/data/paper/DSST/dlib/dlib/..;D:/data/paper/DSST/dlib/dlib/external/libpng;D:/data/paper/DSST/dlib/dlib/external/zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -114,7 +115,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;NDEBUG;DLIB_HAVE_SSE2;DLIB_JPEG_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>Release</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -145,7 +147,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;NDEBUG;DLIB_HAVE_SSE2;DLIB_JPEG_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -196,337 +199,280 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\dlib\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/data/paper/DSST/dlib/dlib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/data/paper/DSST/dlib/examples -BD:/data/paper/DSST/dlib/examples/vc10 --check-stamp-file D:\data\paper\DSST\dlib\examples\vc10\dlib_build\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/data/paper/DSST/dlib/dlib/CMakeLists.txt;D:\data\paper\DSST\dlib\dlib\CMakeLists.txt;D:\data\paper\DSST\dlib\dlib\release_build_by_default;D:\data\paper\DSST\dlib\dlib\add_global_compiler_switch.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestForSTDNamespace.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestForANSIStreamHeaders.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\data\paper\DSST\dlib\dlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/data/paper/DSST/dlib/dlib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/data/paper/DSST/dlib/examples -BD:/data/paper/DSST/dlib/examples/vc10 --check-stamp-file D:\data\paper\DSST\dlib\examples\vc10\dlib_build\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/data/paper/DSST/dlib/dlib/CMakeLists.txt;D:\data\paper\DSST\dlib\dlib\CMakeLists.txt;D:\data\paper\DSST\dlib\dlib\release_build_by_default;D:\data\paper\DSST\dlib\dlib\add_global_compiler_switch.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestForSTDNamespace.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestForANSIStreamHeaders.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\data\paper\DSST\dlib\dlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/data/paper/DSST/dlib/dlib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/data/paper/DSST/dlib/examples -BD:/data/paper/DSST/dlib/examples/vc10 --check-stamp-file D:\data\paper\DSST\dlib\examples\vc10\dlib_build\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/data/paper/DSST/dlib/dlib/CMakeLists.txt;D:\data\paper\DSST\dlib\dlib\CMakeLists.txt;D:\data\paper\DSST\dlib\dlib\release_build_by_default;D:\data\paper\DSST\dlib\dlib\add_global_compiler_switch.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestForSTDNamespace.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestForANSIStreamHeaders.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\data\paper\DSST\dlib\dlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/data/paper/DSST/dlib/dlib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/data/paper/DSST/dlib/examples -BD:/data/paper/DSST/dlib/examples/vc10 --check-stamp-file D:\data\paper\DSST\dlib\examples\vc10\dlib_build\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/data/paper/DSST/dlib/dlib/CMakeLists.txt;D:\data\paper\DSST\dlib\dlib\CMakeLists.txt;D:\data\paper\DSST\dlib\dlib\release_build_by_default;D:\data\paper\DSST\dlib\dlib\add_global_compiler_switch.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestForSTDNamespace.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestForANSIStreamHeaders.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\data\paper\DSST\dlib\dlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\data\paper\DSST\dlib\examples\vc10\dlib_build\CMakeFiles\generate.stamp</Outputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\dlib\base64\base64_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\bigint\bigint_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\bigint\bigint_kernel_2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\bit_stream\bit_stream_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\entropy_decoder\entropy_decoder_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\entropy_decoder\entropy_decoder_kernel_2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\entropy_encoder\entropy_encoder_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\entropy_encoder\entropy_encoder_kernel_2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\md5\md5_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\tokenizer\tokenizer_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\unicode\unicode.cpp"  />
-    <ClCompile Include="..\..\..\dlib\data_io\image_dataset_metadata.cpp"  />
-    <ClCompile Include="..\..\..\dlib\sockets\sockets_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\bsp\bsp.cpp"  />
-    <ClCompile Include="..\..\..\dlib\dir_nav\dir_nav_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\dir_nav\dir_nav_kernel_2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\dir_nav\dir_nav_extensions.cpp"  />
-    <ClCompile Include="..\..\..\dlib\linker\linker_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\logger\extra_logger_headers.cpp"  />
-    <ClCompile Include="..\..\..\dlib\logger\logger_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\logger\logger_config_file.cpp"  />
-    <ClCompile Include="..\..\..\dlib\misc_api\misc_api_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\misc_api\misc_api_kernel_2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\sockets\sockets_extensions.cpp"  />
-    <ClCompile Include="..\..\..\dlib\sockets\sockets_kernel_2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\sockstreambuf\sockstreambuf.cpp"  />
-    <ClCompile Include="..\..\..\dlib\sockstreambuf\sockstreambuf_unbuffered.cpp"  />
-    <ClCompile Include="..\..\..\dlib\server\server_kernel.cpp"  />
-    <ClCompile Include="..\..\..\dlib\server\server_iostream.cpp"  />
-    <ClCompile Include="..\..\..\dlib\server\server_http.cpp"  />
-    <ClCompile Include="..\..\..\dlib\threads\multithreaded_object_extension.cpp"  />
-    <ClCompile Include="..\..\..\dlib\threads\threaded_object_extension.cpp"  />
-    <ClCompile Include="..\..\..\dlib\threads\threads_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\threads\threads_kernel_2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\threads\threads_kernel_shared.cpp"  />
-    <ClCompile Include="..\..\..\dlib\threads\thread_pool_extension.cpp"  />
-    <ClCompile Include="..\..\..\dlib\timer\timer.cpp"  />
-    <ClCompile Include="..\..\..\dlib\stack_trace.cpp"  />
-    <ClCompile Include="..\..\..\dlib\gui_widgets\fonts.cpp"  />
-    <ClCompile Include="..\..\..\dlib\gui_widgets\widgets.cpp"  />
-    <ClCompile Include="..\..\..\dlib\gui_widgets\drawable.cpp"  />
-    <ClCompile Include="..\..\..\dlib\gui_widgets\canvas_drawing.cpp"  />
-    <ClCompile Include="..\..\..\dlib\gui_widgets\style.cpp"  />
-    <ClCompile Include="..\..\..\dlib\gui_widgets\base_widgets.cpp"  />
-    <ClCompile Include="..\..\..\dlib\gui_core\gui_core_kernel_1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\gui_core\gui_core_kernel_2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libpng\png.c" >
+    <ClCompile Include="..\..\..\dlib\base64\base64_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\bigint\bigint_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\bigint\bigint_kernel_2.cpp" />
+    <ClCompile Include="..\..\..\dlib\bit_stream\bit_stream_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\entropy_decoder\entropy_decoder_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\entropy_decoder\entropy_decoder_kernel_2.cpp" />
+    <ClCompile Include="..\..\..\dlib\entropy_encoder\entropy_encoder_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\entropy_encoder\entropy_encoder_kernel_2.cpp" />
+    <ClCompile Include="..\..\..\dlib\md5\md5_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\tokenizer\tokenizer_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\unicode\unicode.cpp" />
+    <ClCompile Include="..\..\..\dlib\data_io\image_dataset_metadata.cpp" />
+    <ClCompile Include="..\..\..\dlib\sockets\sockets_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\bsp\bsp.cpp" />
+    <ClCompile Include="..\..\..\dlib\dir_nav\dir_nav_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\dir_nav\dir_nav_kernel_2.cpp" />
+    <ClCompile Include="..\..\..\dlib\dir_nav\dir_nav_extensions.cpp" />
+    <ClCompile Include="..\..\..\dlib\linker\linker_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\logger\extra_logger_headers.cpp" />
+    <ClCompile Include="..\..\..\dlib\logger\logger_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\logger\logger_config_file.cpp" />
+    <ClCompile Include="..\..\..\dlib\misc_api\misc_api_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\misc_api\misc_api_kernel_2.cpp" />
+    <ClCompile Include="..\..\..\dlib\sockets\sockets_extensions.cpp" />
+    <ClCompile Include="..\..\..\dlib\sockets\sockets_kernel_2.cpp" />
+    <ClCompile Include="..\..\..\dlib\sockstreambuf\sockstreambuf.cpp" />
+    <ClCompile Include="..\..\..\dlib\sockstreambuf\sockstreambuf_unbuffered.cpp" />
+    <ClCompile Include="..\..\..\dlib\server\server_kernel.cpp" />
+    <ClCompile Include="..\..\..\dlib\server\server_iostream.cpp" />
+    <ClCompile Include="..\..\..\dlib\server\server_http.cpp" />
+    <ClCompile Include="..\..\..\dlib\threads\multithreaded_object_extension.cpp" />
+    <ClCompile Include="..\..\..\dlib\threads\threaded_object_extension.cpp" />
+    <ClCompile Include="..\..\..\dlib\threads\threads_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\threads\threads_kernel_2.cpp" />
+    <ClCompile Include="..\..\..\dlib\threads\threads_kernel_shared.cpp" />
+    <ClCompile Include="..\..\..\dlib\threads\thread_pool_extension.cpp" />
+    <ClCompile Include="..\..\..\dlib\timer\timer.cpp" />
+    <ClCompile Include="..\..\..\dlib\stack_trace.cpp" />
+    <ClCompile Include="..\..\..\dlib\gui_widgets\fonts.cpp" />
+    <ClCompile Include="..\..\..\dlib\gui_widgets\widgets.cpp" />
+    <ClCompile Include="..\..\..\dlib\gui_widgets\drawable.cpp" />
+    <ClCompile Include="..\..\..\dlib\gui_widgets\canvas_drawing.cpp" />
+    <ClCompile Include="..\..\..\dlib\gui_widgets\style.cpp" />
+    <ClCompile Include="..\..\..\dlib\gui_widgets\base_widgets.cpp" />
+    <ClCompile Include="..\..\..\dlib\gui_core\gui_core_kernel_1.cpp" />
+    <ClCompile Include="..\..\..\dlib\gui_core\gui_core_kernel_2.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libpng\png.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngerror.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngerror.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngget.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngget.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngmem.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngmem.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngpread.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngpread.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngread.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngread.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngrio.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngrio.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngrtran.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngrtran.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngrutil.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngrutil.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngset.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngset.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngtrans.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngtrans.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngwio.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngwio.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngwrite.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngwrite.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngwtran.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngwtran.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\libpng\pngwutil.c" >
+    <ClCompile Include="..\..\..\dlib\external\libpng\pngwutil.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\adler32.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\adler32.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\compress.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\compress.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\crc32.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\crc32.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\deflate.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\deflate.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\gzclose.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\gzclose.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\gzlib.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\gzlib.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\gzread.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\gzread.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\gzwrite.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\gzwrite.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\infback.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\infback.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\inffast.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\inffast.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\inflate.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\inflate.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\inftrees.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\inftrees.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\trees.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\trees.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\uncompr.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\uncompr.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\external\zlib\zutil.c" >
+    <ClCompile Include="..\..\..\dlib\external\zlib\zutil.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="..\..\..\dlib\image_loader\png_loader.cpp"  />
-    <ClCompile Include="..\..\..\dlib\image_saver\save_png.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcomapi.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdapimin.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdapistd.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdatasrc.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdcoefct.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdcolor.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jddctmgr.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdhuff.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdinput.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdmainct.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdmarker.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdmaster.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdmerge.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdphuff.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdpostct.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdsample.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jerror.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jidctflt.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jidctfst.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jidctint.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jidctred.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jmemmgr.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jmemnobs.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jquant1.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jquant2.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jutils.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcapimin.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdatadst.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcparam.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcapistd.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcmarker.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcinit.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcmaster.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcdctmgr.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jccoefct.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jccolor.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jchuff.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcmainct.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcphuff.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcprepct.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcsample.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jfdctint.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jfdctflt.cpp"  />
-    <ClCompile Include="..\..\..\dlib\external\libjpeg\jfdctfst.cpp"  />
-    <ClCompile Include="..\..\..\dlib\image_loader\jpeg_loader.cpp"  />
-    <ClCompile Include="..\..\..\dlib\image_saver\save_jpeg.cpp"  />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="D:/data/paper/DSST/dlib/examples/vc10/ZERO_CHECK.vcxproj">
-      <Project>8F066755-2D70-4753-A429-37C6D20A8717</Project>
-    </ProjectReference>
+    <ClCompile Include="..\..\..\dlib\image_loader\png_loader.cpp" />
+    <ClCompile Include="..\..\..\dlib\image_saver\save_png.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcomapi.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdapimin.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdapistd.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdatasrc.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdcoefct.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdcolor.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jddctmgr.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdhuff.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdinput.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdmainct.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdmarker.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdmaster.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdmerge.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdphuff.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdpostct.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdsample.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jerror.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jidctflt.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jidctfst.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jidctint.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jidctred.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jmemmgr.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jmemnobs.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jquant1.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jquant2.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jutils.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcapimin.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jdatadst.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcparam.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcapistd.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcmarker.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcinit.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcmaster.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcdctmgr.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jccoefct.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jccolor.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jchuff.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcmainct.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcphuff.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcprepct.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jcsample.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jfdctint.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jfdctflt.cpp" />
+    <ClCompile Include="..\..\..\dlib\external\libjpeg\jfdctfst.cpp" />
+    <ClCompile Include="..\..\..\dlib\image_loader\jpeg_loader.cpp" />
+    <ClCompile Include="..\..\..\dlib\image_saver\save_jpeg.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
