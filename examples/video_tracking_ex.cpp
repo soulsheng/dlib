@@ -61,8 +61,8 @@ int main(int argc, char** argv) try
         win.clear_overlay(); 
         win.add_overlay(tracker.get_position());
 
-        cout << "hit enter to process next frame" << endl;
-        cin.get();
+        //cout << "hit enter to process next frame" << endl;
+        //cin.get();
     }
 }
 catch (std::exception& e)
