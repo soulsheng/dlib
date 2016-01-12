@@ -27,3 +27,5 @@ dist
 /examples/vc10/Debug
 /examples/vc10/Release
 /examples/vc10/Win32
+/examples/vc10/*.suo
+/build/*.suo
