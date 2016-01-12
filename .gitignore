@@ -30,3 +30,9 @@ dist
 /build/*.suo
 /examples/vc10/dlib_build/CMakeFiles
 /examples/vc10/dlib_build/*.cmake
+examples/vc10/dlib_build/*.dir
+examples/vc10/dlib_build/*.sdf
+examples/vc10/dlib_build/*.opensdf
+examples/vc10/dlib_build/*.user
+examples/vc10/dlib_build/Debug
+examples/vc10/dlib_build/Release
