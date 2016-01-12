@@ -80,7 +80,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:/data/paper/DSST/dlib/dlib/..;C:/opencv/sources/build;C:/opencv/sources/include;C:/opencv/sources/include/opencv;C:/opencv/sources/modules/core/include;C:/opencv/sources/modules/flann/include;C:/opencv/sources/modules/imgproc/include;C:/opencv/sources/modules/highgui/include;C:/opencv/sources/modules/features2d/include;C:/opencv/sources/modules/calib3d/include;C:/opencv/sources/modules/ml/include;C:/opencv/sources/modules/video/include;C:/opencv/sources/modules/legacy/include;C:/opencv/sources/modules/objdetect/include;C:/opencv/sources/modules/photo/include;C:/opencv/sources/modules/gpu/include;C:/opencv/sources/modules/ocl/include;C:/opencv/sources/modules/nonfree/include;C:/opencv/sources/modules/contrib/include;C:/opencv/sources/modules/stitching/include;C:/opencv/sources/modules/superres/include;C:/opencv/sources/modules/ts/include;C:/opencv/sources/modules/videostab/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../;$(OCVDIR)/include;$(OCVDIR)/include/opencv;$(OCVDIR)/include/opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -111,7 +111,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib_build\Debug\dlib.lib;ws2_32.lib;winmm.lib;comctl32.lib;gdi32.lib;imm32.lib</AdditionalDependencies>
+      <AdditionalDependencies>dlib_build\Debug\dlib.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>D:/data/paper/DSST/dlib/examples/vc10/Debug/video_tracking_ex.lib</ImportLibrary>
@@ -125,7 +125,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:/data/paper/DSST/dlib/dlib/..;C:/opencv/sources/build;C:/opencv/sources/include;C:/opencv/sources/include/opencv;C:/opencv/sources/modules/core/include;C:/opencv/sources/modules/flann/include;C:/opencv/sources/modules/imgproc/include;C:/opencv/sources/modules/highgui/include;C:/opencv/sources/modules/features2d/include;C:/opencv/sources/modules/calib3d/include;C:/opencv/sources/modules/ml/include;C:/opencv/sources/modules/video/include;C:/opencv/sources/modules/legacy/include;C:/opencv/sources/modules/objdetect/include;C:/opencv/sources/modules/photo/include;C:/opencv/sources/modules/gpu/include;C:/opencv/sources/modules/ocl/include;C:/opencv/sources/modules/nonfree/include;C:/opencv/sources/modules/contrib/include;C:/opencv/sources/modules/stitching/include;C:/opencv/sources/modules/superres/include;C:/opencv/sources/modules/ts/include;C:/opencv/sources/modules/videostab/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../;$(OCVDIR)/include;$(OCVDIR)/include/opencv;$(OCVDIR)/include/opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -155,7 +155,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib_build\Release\dlib.lib;ws2_32.lib;winmm.lib;comctl32.lib;gdi32.lib;imm32.lib</AdditionalDependencies>
+      <AdditionalDependencies>dlib_build\Release\dlib.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>D:/data/paper/DSST/dlib/examples/vc10/Release/video_tracking_ex.lib</ImportLibrary>
