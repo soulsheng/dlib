@@ -3,7 +3,8 @@
 *.swp
 *.o
 *.so
-build
 dist
 *.egg-info/
 
+/build/CMakeFiles
+/build/config
