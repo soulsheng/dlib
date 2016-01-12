@@ -8,3 +8,10 @@ dist
 
 /build/CMakeFiles
 /build/config
+/build/*.dir
+/build/*.sdf
+/build/*.opensdf
+/build/*.user
+/build/Debug
+/build/Release
+/build/Win32
