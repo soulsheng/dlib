@@ -16,8 +16,8 @@
 //#include <dlib/image_processing.h>
 //#include <dlib/gui_widgets.h>
 #include "correlation_trackerDIY.h"
-#include <dlib/image_io.h>
-#include <dlib/dir_nav.h>
+//#include <dlib/image_io.h>
+//#include <dlib/dir_nav.h>
 
 
 //using namespace dlib;

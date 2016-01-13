@@ -4,10 +4,10 @@
 #define DLIB_CORRELATION_TrACKER_H_
 
 
-#include "dlib/geometry.h"
-#include "dlib/matrix.h"
-#include "dlib/array2d.h"
-#include "dlib/image_transforms/assign_image.h"
+//#include "dlib/geometry.h"
+//#include "dlib/matrix.h"
+//#include "dlib/array2d.h"
+//#include "dlib/image_transforms/assign_image.h"
 #include "dlib/image_transforms/fhog.h"
 
 namespace dlib
