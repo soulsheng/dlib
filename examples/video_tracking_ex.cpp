@@ -89,7 +89,7 @@ int main(int argc, char** argv) try
 	sizeMix.width *= 2;
 
 	CvVideoWriter* writer = cvCreateVideoWriter(  
-		IMAGE_FILE_MP4_OUT, CV_FOURCC('D', 'I', 'V', 'X'),fps,sizeMix);  
+		IMAGE_FILE_MP4_OUT, CV_FOURCC('D', 'I', 'V', 'X'),fps,size);  
 
 	//DarkChannelGPU	m_DarkChannel;
 	//m_DarkChannel.initialize( size.width, size.height );
@@ -110,7 +110,7 @@ int main(int argc, char** argv) try
 		dlib::correlation_tracker tracker;
 		tracker.start_track(img, dlib::centered_rect(dlib::point(839,270), 136, 224));// (dlib::point(839,270), 100, 200))
 
-		IplImage* expanded = cvCreateImage( sizeMix, IPL_DEPTH_8U, 3 );  
+		IplImage* expanded = cvCreateImage( size, IPL_DEPTH_8U, 3 );  
 
 		cout << "In capture ..." << endl;
 		int nFrameCount = 0;
