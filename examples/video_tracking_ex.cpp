@@ -13,8 +13,9 @@
     position of the juice box as the camera moves around.
 */
 
-#include <dlib/image_processing.h>
-#include <dlib/gui_widgets.h>
+//#include <dlib/image_processing.h>
+//#include <dlib/gui_widgets.h>
+#include "correlation_trackerDIY.h"
 #include <dlib/image_io.h>
 #include <dlib/dir_nav.h>
 
@@ -107,7 +108,7 @@ int main(int argc, char** argv) try
 		cv::Mat imageInGray = iplImgGray;
 		dlib::array2d<unsigned char> img;
 		load_image(img, imageInGray);
-		dlib::correlation_tracker tracker;
+		dlib::correlation_trackerDIY tracker;
 		tracker.start_track(img, dlib::centered_rect(dlib::point(839,270), 136, 224));// (dlib::point(839,270), 100, 200))
 
 		IplImage* expanded = cvCreateImage( size, IPL_DEPTH_8U, 3 );  

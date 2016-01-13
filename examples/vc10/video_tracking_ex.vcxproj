@@ -265,6 +265,9 @@
   <ItemGroup>
     <ClCompile Include="..\video_tracking_ex.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\correlation_trackerDIY.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

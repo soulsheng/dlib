@@ -3,23 +3,23 @@
 #ifndef DLIB_CORRELATION_TrACKER_H_
 #define DLIB_CORRELATION_TrACKER_H_
 
-#include "correlation_tracker_abstract.h"
-#include "../geometry.h"
-#include "../matrix.h"
-#include "../array2d.h"
-#include "../image_transforms/assign_image.h"
 
+#include "dlib/geometry.h"
+#include "dlib/matrix.h"
+#include "dlib/array2d.h"
+#include "dlib/image_transforms/assign_image.h"
+#include "dlib/image_transforms/fhog.h"
 
 namespace dlib
 {
 
 // ----------------------------------------------------------------------------------------
 
-    class correlation_tracker
+    class correlation_trackerDIY
     {
-    public:
+	public:
 
-        correlation_tracker (
+        correlation_trackerDIY (
         ) 
         {
             // Create the cosine mask used for space filtering.
