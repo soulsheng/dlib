@@ -10,6 +10,9 @@
 //#include "dlib/image_transforms/assign_image.h"
 #include "dlib/image_transforms/fhog.h"
 
+#include <opencv.hpp>
+#include <cv.h>
+
 namespace dlib
 {
 
@@ -35,6 +38,23 @@ namespace dlib
                 scale_cos_mask[k] = std::cos(dist);
             }
         }
+
+		void start_track (
+			const cv::Mat& imgCV,
+			const drectangle& p
+			)
+		{
+			load_image(imgCache, imgCV);
+			start_track(imgCache, p);
+		}
+
+		double update (
+			const cv::Mat& imgCV
+			)
+		{
+			load_image(imgCache, imgCV);
+			return update(imgCache, get_position());
+		}
 
         template <typename image_type>
         void start_track (
@@ -346,6 +366,21 @@ namespace dlib
             return temp;
         }
 
+		void load_image( array2d<unsigned char>& img, const cv::Mat& imageIn)
+		{
+			int cols = imageIn.cols;
+			int rows = imageIn.rows;
+
+			img.set_size(rows, cols);
+			for ( int i = 0; i < rows; i++ )
+			{
+				for (int j = 0; j < cols; j++)
+				{
+					img[i][j] = imageIn.at<uchar>( i, j );
+				}
+			}
+		}
+		dlib::array2d<unsigned char> imgCache;
 
         std::vector<matrix<std::complex<double> > > A, F;
         matrix<double> B;

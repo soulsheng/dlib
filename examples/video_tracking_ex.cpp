@@ -42,20 +42,7 @@ void expand_imgs( IplImage* img1, IplImage* img2, IplImage* expanded )
 	cvAdd( img2, expanded, expanded, NULL );  
 	cvResetImageROI( expanded );  
 }
-void load_image( dlib::array2d<unsigned char>& img, cv::Mat& imageIn)
-{
-	int cols = imageIn.cols;
-	int rows = imageIn.rows;
 
-	img.set_size(rows, cols);
-	for ( int i = 0; i < rows; i++ )
-	{
-		for (int j = 0; j < cols; j++)
-		{
-			img[i][j] = imageIn.at<uchar>( i, j );
-		}
-	}
-}
 void save_image( dlib::array2d<unsigned char>& img, cv::Mat& imageIn)
 {
 	int cols = imageIn.cols;
@@ -106,10 +93,8 @@ int main(int argc, char** argv) try
 
 		// Load the first frame.  
 		cv::Mat imageInGray = iplImgGray;
-		dlib::array2d<unsigned char> img;
-		load_image(img, imageInGray);
 		dlib::correlation_trackerDIY tracker;
-		tracker.start_track(img, dlib::centered_rect(dlib::point(839,270), 136, 224));// (dlib::point(839,270), 100, 200))
+		tracker.start_track(imageInGray, dlib::centered_rect(dlib::point(839,270), 136, 224));// (dlib::point(839,270), 100, 200))
 
 		IplImage* expanded = cvCreateImage( size, IPL_DEPTH_8U, 3 );  
 
@@ -126,8 +111,7 @@ int main(int argc, char** argv) try
 			//m_DarkChannel.Enhance( imageIn, imageOut );
 			cvCvtColor( iplImg, iplImgGray, CV_RGB2GRAY );
 			imageInGray = iplImgGray;
-			load_image(img, imageInGray);
-			tracker.update(img);
+			tracker.update(imageInGray);
 
 			//cv::imshow("imageIn", imageIn );
 			//cv::imshow("imageOut", imageOut );
