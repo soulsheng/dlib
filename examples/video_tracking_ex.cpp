@@ -66,7 +66,8 @@ int main(int argc, char** argv) try
 		// Load the first frame.  
 		cv::Mat imageInGray = iplImgGray;
 		dlib::correlation_trackerDIY tracker;
-		tracker.start_track(imageInGray, dlib::centered_rect(dlib::point(458,300), 207, 249));// (dlib::point(839,270), 100, 200))
+		cv::Rect rect(354, 175, 208, 250);// left, top, width, height
+		tracker.start_track(imageInGray, rect);// (dlib::point(839,270), 100, 200))
 
 		IplImage* expanded = cvCreateImage( size, IPL_DEPTH_8U, 3 );  
 
@@ -85,8 +86,9 @@ int main(int argc, char** argv) try
 			tracker.update(imageInGray);
 
 
-			dlib::drectangle rect = tracker.get_position();
-			cv::rectangle(imageOut, cv::Rect( cv::Point(rect.left(), rect.bottom()), cv::Point(rect.right(), rect.top()) ), cv::Scalar(0.0f,255.0f,0.0f) );
+			cv::Rect rect;
+			tracker.get_position(rect);
+			cv::rectangle(imageOut, rect, cv::Scalar(0.0f,255.0f,0.0f) );
 
 			cv::imshow("imageOut", imageOut );
 			*expanded = imageOut;

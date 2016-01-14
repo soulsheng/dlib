@@ -41,11 +41,14 @@ namespace dlib
 
 		void start_track (
 			const cv::Mat& imgCV,
-			const drectangle& p
+			const cv::Rect& rect
 			)
 		{
 			load_image(imgCache, imgCV);
-			start_track(imgCache, p);
+
+			drectangle drect( rect.x, rect.y, rect.x + rect.width, rect.y + rect.height ) ;
+
+			start_track(imgCache, drect);
 		}
 
 		double update (
@@ -54,6 +57,12 @@ namespace dlib
 		{
 			load_image(imgCache, imgCV);
 			return update(imgCache, get_position());
+		}
+
+		void get_position ( cv::Rect& rect
+			) const 
+		{ 
+			rect = cv::Rect( cv::Point(position.left(), position.bottom()), cv::Point(position.right(), position.top()) );
 		}
 
         template <typename image_type>
