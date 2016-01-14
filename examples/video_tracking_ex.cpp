@@ -27,37 +27,12 @@ using namespace std;
 #define	IMAGE_FILE_MP4		"20160112_dsst.mp4"
 #define	IMAGE_FILE_MP4_OUT	"20160112_dsst.avi"
 
-//#if ENABLE_OCV_MP4
+
 #include <opencv.hpp>
 #include <cv.h>
 //using namespace cv;
 #include <string>
 
-void expand_imgs( IplImage* img1, IplImage* img2, IplImage* expanded )  
-{  
-	cvZero( expanded );  
-	cvSetImageROI( expanded, cvRect( 0, 0, img1->width, img1->height ) );  
-	cvAdd( img1, expanded, expanded, NULL );  
-	cvSetImageROI( expanded, cvRect(img1->width, 0, img2->width, img2->height) );  
-	cvAdd( img2, expanded, expanded, NULL );  
-	cvResetImageROI( expanded );  
-}
-
-void save_image( dlib::array2d<unsigned char>& img, cv::Mat& imageIn)
-{
-	int cols = imageIn.cols;
-	int rows = imageIn.rows;
-
-	imageIn.create(rows, cols, CV_8UC1);
-	for ( int i = 0; i < rows; i++ )
-	{
-		for (int j = 0; j < cols; j++)
-		{
-			imageIn.at<uchar>(i, j) = img[i][j];
-		}
-	}
-}
-//#endif
 
 int main(int argc, char** argv) try
 {
@@ -78,9 +53,6 @@ int main(int argc, char** argv) try
 
 	CvVideoWriter* writer = cvCreateVideoWriter(  
 		IMAGE_FILE_MP4_OUT, CV_FOURCC('D', 'I', 'V', 'X'),fps,size);  
-
-	//DarkChannelGPU	m_DarkChannel;
-	//m_DarkChannel.initialize( size.width, size.height );
 
 	if( capture )
 	{
@@ -108,30 +80,18 @@ int main(int argc, char** argv) try
 
 			cv::Mat imageOut= imageIn.clone();
 
-			//m_DarkChannel.Enhance( imageIn, imageOut );
 			cvCvtColor( iplImg, iplImgGray, CV_RGB2GRAY );
 			imageInGray = iplImgGray;
 			tracker.update(imageInGray);
 
-			//cv::imshow("imageIn", imageIn );
-			//cv::imshow("imageOut", imageOut );
 
 			dlib::drectangle rect = tracker.get_position();
 			cv::rectangle(imageOut, cv::Rect( cv::Point(rect.left(), rect.bottom()), cv::Point(rect.right(), rect.top()) ), cv::Scalar(0.0f,255.0f,0.0f) );
-#if 0
-			iplImgOut = imageOut;
-			expand_imgs( iplImg, &iplImgOut, expanded );
 
-			imageOut = expanded;
-
-			cv::imshow("imageOut", imageOut );
-
-			cvWriteToAVI( writer, expanded );  
-#else
 			cv::imshow("imageOut", imageOut );
 			*expanded = imageOut;
 			cvWriteToAVI( writer, expanded ); 
-#endif
+
 			if( cv::waitKey( 10 ) >= 0 )
 				goto _cleanup_;
 		}
