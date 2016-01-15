@@ -65,6 +65,8 @@ namespace dlib
 			rect = cv::Rect( cv::Point(position.left(), position.bottom()), cv::Point(position.right(), position.top()) );
 		}
 
+	private:
+
         template <typename image_type>
         void start_track (
             const image_type& img,
