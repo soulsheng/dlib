@@ -8,7 +8,7 @@
 //#include "dlib/matrix.h"
 //#include "dlib/array2d.h"
 //#include "dlib/image_transforms/assign_image.h"
-#include "dlib/image_transforms/fhog.h"
+#include "fhog.h"
 
 #include <opencv.hpp>
 #include <cv.h>

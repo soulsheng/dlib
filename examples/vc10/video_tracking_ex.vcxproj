@@ -264,6 +264,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\dsst\correlation_trackerDIY.h" />
+    <ClInclude Include="..\dsst\fhog.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\dsst\video_tracking_ex.cpp" />
