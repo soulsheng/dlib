@@ -36,3 +36,5 @@ examples/vc10/dlib_build/*.opensdf
 examples/vc10/dlib_build/*.user
 examples/vc10/dlib_build/Debug
 examples/vc10/dlib_build/Release
+/examples/vc10/ipch
+/*.lnk
