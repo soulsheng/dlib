@@ -24,8 +24,8 @@
 using namespace std;
 
 #define ENABLE_OCV_MP4		1
-#define	IMAGE_FILE_MP4		"20160115_dsst.mp4"
-#define	IMAGE_FILE_MP4_OUT	"20160115_dsst.avi"
+#define	IMAGE_FILE_MP4		"20150514_dsst.mp4"
+#define	IMAGE_FILE_MP4_OUT	"20150514_dsst.avi"
 
 
 #include <opencv.hpp>
@@ -66,7 +66,7 @@ int main(int argc, char** argv) try
 		// Load the first frame.  
 		cv::Mat imageInGray = iplImgGray;
 		dlib::correlation_trackerDIY tracker;
-		cv::Rect rect(258, 93, 186, 448);// left, top, width, height
+		cv::Rect rect(307, 80, 229, 209);// left, top, width, height
 		tracker.start_track(imageInGray, rect);// (dlib::point(839,270), 100, 200))
 
 		IplImage* expanded = cvCreateImage( size, IPL_DEPTH_8U, 3 );  
