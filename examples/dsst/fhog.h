@@ -9,7 +9,7 @@
 #include "dlib/array.h"
 #include "dlib/geometry.h"
 #include "assign_image.h"
-#include "draw.h"
+//#include "draw.h"
 #include "interpolation.h"
 //#include "../simd/simd4i.h"
 //#include "../simd/simd4f.h"
@@ -833,7 +833,7 @@ namespace dlib
                 }
             }
         }
-
+#if 0
     // ------------------------------------------------------------------------------------
 
         inline void create_fhog_bar_images (
@@ -855,7 +855,7 @@ namespace dlib
                 mbars[i] = subm(matrix_cast<float>(mat(bars[i])), centered_rect(get_rect(bars[i]),w,w) );
             }
         }
-
+#endif
     } // end namespace impl_fhog
 
 // ----------------------------------------------------------------------------------------
