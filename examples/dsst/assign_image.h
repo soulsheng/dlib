@@ -3,9 +3,9 @@
 #ifndef DLIB_ASSIGN_IMAGe_
 #define DLIB_ASSIGN_IMAGe_
 
-#include "../pixel.h"
-#include "assign_image_abstract.h"
-#include "../statistics.h"
+#include "pixel.h"
+//#include "assign_image_abstract.h"
+#include "dlib/statistics/statistics.h"
 
 namespace dlib
 {

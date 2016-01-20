@@ -3,13 +3,13 @@
 #ifndef DLIB_INTERPOlATIONh_
 #define DLIB_INTERPOlATIONh_ 
 
-#include "interpolation_abstract.h"
-#include "../pixel.h"
-#include "../matrix.h"
+//#include "interpolation_abstract.h"
+#include "pixel.h"
+#include "dlib/matrix.h"
 #include "assign_image.h"
-#include "image_pyramid.h"
-#include "../simd.h"
-#include "../image_processing/full_object_detection.h"
+#include "dlib/image_transforms/image_pyramid.h"
+//#include "../simd.h"
+//#include "../image_processing/full_object_detection.h"
 
 namespace dlib
 {
@@ -1072,7 +1072,7 @@ namespace dlib
         {
             return centered_rect(tran(center(rect)), rect.width(), rect.height());
         }
-
+#if 0
         inline full_object_detection tform_object(
             const point_transform_affine& tran,
             const full_object_detection& obj
@@ -1086,6 +1086,7 @@ namespace dlib
             }
             return full_object_detection(tform_object(tran,obj.get_rect()), parts);
         }
+#endif
     }
 
 // ----------------------------------------------------------------------------------------
@@ -1641,7 +1642,7 @@ namespace dlib
         from.push_back(rotate_point<double>(center(details.rect),details.rect.br_corner(),details.angle));
         return find_affine_transform(from, to);
     }
-
+#if 0
 // ----------------------------------------------------------------------------------------
 
     inline full_object_detection map_det_to_chip(
@@ -1663,7 +1664,7 @@ namespace dlib
         res.get_rect() = rect;
         return res;
     }
-
+#endif
 // ----------------------------------------------------------------------------------------
 
     namespace impl
@@ -1849,7 +1850,7 @@ namespace dlib
     }
 
 // ----------------------------------------------------------------------------------------
-
+#if 0
     inline chip_details get_face_chip_details (
         const full_object_detection& det,
         const unsigned long size = 200,
@@ -1924,7 +1925,7 @@ namespace dlib
             res.push_back(get_face_chip_details(dets[i], size, padding));
         return res;
     }
-
+#endif
 // ----------------------------------------------------------------------------------------
 
 }

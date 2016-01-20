@@ -3,10 +3,10 @@
 #ifndef DLIB_DRAW_IMAGe_
 #define DLIB_DRAW_IMAGe_
 
-#include "draw_abstract.h"
-#include "../algs.h"
-#include "../pixel.h"
-#include "../matrix.h"
+//#include "draw_abstract.h"
+#include "dlib/algs.h"
+#include "pixel.h"
+#include "dlib/matrix.h"
 #include <cmath>
 
 namespace dlib

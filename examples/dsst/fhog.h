@@ -3,16 +3,16 @@
 #ifndef DLIB_fHOG_Hh_
 #define DLIB_fHOG_Hh_
 
-#include "fhog_abstract.h"
-#include "../matrix.h"
-#include "../array2d.h"
-#include "../array.h"
-#include "../geometry.h"
+//#include "fhog_abstract.h"
+#include "dlib/matrix.h"
+#include "dlib/array2d.h"
+#include "dlib/array.h"
+#include "dlib/geometry.h"
 #include "assign_image.h"
 #include "draw.h"
 #include "interpolation.h"
-#include "../simd/simd4i.h"
-#include "../simd/simd4f.h"
+//#include "../simd/simd4i.h"
+//#include "../simd/simd4f.h"
 
 namespace dlib
 {
